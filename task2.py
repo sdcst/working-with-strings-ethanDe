@@ -5,6 +5,9 @@ Take a string and make sure that it is a proper sentence, with only the first le
 (2 points)
 '''
 
+from typing import NewType
+
+
 def properCaps(input):
     '''
     parameters:
@@ -13,7 +16,9 @@ def properCaps(input):
     return
     str - proper capitalized string
     '''
-    return
+    input = input.lower()
+    input = input.capitalize()
+    return input
 
 
 if __name__ == "__main__":
