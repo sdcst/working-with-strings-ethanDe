@@ -20,7 +20,7 @@ def split(input):
     count = len(input)
     count = count / 2
     if count%2 != 0:
-        count = round(count,1)
+        count = round(count, 1)
     count = int(count)
 
     if input[count] == " " or input[count-1] == " ":
